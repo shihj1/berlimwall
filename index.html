@@ -4,6 +4,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+{
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
@@ -16,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
     <a href="#home" class="w3-bar-item w3-button">The Berlin Wall</a>
     <div class="w3-right w3-hide-small">
+      <a href="#History" class="w3-bar-item w3-button">History</a>
       <a href="#Symbol" class="w3-bar-item w3-button">Symbol</a>
       <a href="#Why" class="w3-bar-item w3-button">Why</a>
       <a href="#Map" class="w3-bar-item w3-button">Map</a>
@@ -32,7 +49,25 @@ h1,h2,h3,h4,h5,h6 {
 
 <div class="w3-content" style="max-width:1100px">
 
-  <div class="w3-row w3-padding-64" id="Symbol">
+<div class="w3-row w3-padding-64" id="History">
+    <div class="w3-center l6 w3-padding-large">
+      <h1 class="w3-center">History</h1><br>
+      <p class="w3-text-grey">
+1945 | The Soviets reach Berlin, and ends World War 2. In this year, the victors (USA, Great Britain, France, Soviet Union) came together in the Potsdam Conference to divide Germany into four parts.
+  <hr>
+1948 | The Berlin Blockade was set up on June 24. All water/land transit route was removed, this led to West Berlin becoming into a deserted island. This led to the Berlin Airlift on June 26. 
+  <hr>
+1955 | The allies officially announce their backing out of Germany. West Germany becomes a sovereign state.
+  <hr>
+1961 | After having 3 Million East Germans leave using the open Berlin Border, Walter Ulbricht of East Germany orders the construction of the Berlin Wall. Early on August 13, troops from East Germany started putting up barb wires, and started constructing concrete wall. The wall surrounding Berlin will extend 165 km (100 miles). See 
+<a href="#Map">Map</a> for a map of the Berlin Wall.
+ <hr>
+1989 | The East German government come under heave pressure from many citizens. Huge anti-goverment demonstrations were held having the slogan "Wir sind das Volk!" (We are the People!) From this, many government officials were forced to resign. Later on this year, in November 9, an East German government spokesman mistakenly announces that citizens of the German Democratic Republic will now be permitted to travel without restrictions — effective immediately. It was not the original plan, but the East Berliners took that announcement and swarmed the wall. The wall soon lost effect, was overan, and eventually, completely disappeared. 
+
+<img id="myImg" src="lu.jpg" width="300" height="200">
+
+<hr>
+<div class="w3-row w3-padding-64" id="Symbol">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
      <img src="no.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
     </div>
@@ -61,20 +96,16 @@ The wall was the most distinguishable symbol of the Cold War around the globe. H
 
   <hr>
 
-  <div class="w3-container w3-padding-64" id="Map">
+  <div class="w3-center" id="Map">
 <h1 class="w3-center">Berlin and the Wall</h1>
-<div class="image-gallery">
-<iframe width="50%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Berlin+()&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe>
-<img class="w3-center" src="please.png"/>
-<div class="clear"></div>
-</div>
+<div>
+<iframe width="1000" height="400" src="https://maps.google.com/maps?q=berlin&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe>
+      </div>
+<hr>
+<div class="w3-center">
+<img src="please.png" style="width="500">
 
-</div>
-
-
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <h2 class="w3-center">The Berlin Wall</h2>
-</footer>
-
+<hr>
+                                        
 </body>
 </html>
